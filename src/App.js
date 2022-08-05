@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+import Caraousel from './components/Caraousel';
+import Navbar from './components/Navbar';
+
+import Recipes from './components/Recipes';
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <Navbar heading="Annapoorna | Ashima Kitchen" item1="Breakfast"  item2="Brunch"  item3Dropdown="Snacks"  item4="Dinner" />
+   <Caraousel/>
+   <Recipes/>
+    </>
   );
 }
 
